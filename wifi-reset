@@ -1,0 +1,5 @@
+#!/bin/bash
+rmmod 8821ce
+echo 1 > /sys/bus/pci/devices/0000:02:00.0/reset
+echo 1 > /sys/bus/pci/devices/0000:02:00.0/remove
+echo 1 > /sys/bus/pci/rescan
